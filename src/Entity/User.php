@@ -16,6 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     fields={"email"},
  *     message="I think you're already registered!"
  * )
+ * @ORM\Table(name="`user`")
  */
 class User implements UserInterface
 {

@@ -95,3 +95,11 @@ us do what we love!
 
 <3 Your friends at SymfonyCasts
 
+### Cap 1
+Eventos, eventos y eventos!
+
+### Next 
+[Cap 2](https://symfonycasts.com/screencast/deep-dive/event-listener#play)
+* Conexión a Symfony con un suscriptor de eventos
+
+
