@@ -47,3 +47,7 @@ yarn-error.log
 /src/Migrations/Version20181016184244.php
 /src/Migrations/Version20181018165320.php
 /src/Migrations/Version20181031150638.php
+/src/Migrations/Version20190214204726.php
+/src/Migrations/Version20181031163156.php
+/src/Migrations/Version20190219195937.php
+/src/Migrations/Version20190926151031.php
