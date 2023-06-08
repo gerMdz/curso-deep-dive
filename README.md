@@ -102,7 +102,8 @@ Eventos, eventos y eventos.
 Conexión a Symfony con un suscriptor de eventos.
 
 ### Next 
-[Cap ](https://symfonycasts.com/screencast/deep-dive/kernel-handle#play)
-* index.php a HttpKernel::handle()
+[Cap 4](https://symfonycasts.com/screencast/deep-dive/router-listener#play)
+* RequestEvent & RouterListener
+
 
 
