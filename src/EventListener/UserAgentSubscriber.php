@@ -3,6 +3,7 @@
 namespace App\EventListener;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 
 class UserAgentSubscriber implements EventSubscriberInterface

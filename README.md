@@ -102,8 +102,8 @@ Eventos, eventos y eventos.
 Conexión a Symfony con un suscriptor de eventos.
 
 ### Next 
-[Cap 5](https://symfonycasts.com/screencast/deep-dive/request-attributes#play)
-* Routing Secrets & Request Attributes
+[Cap 8](https://symfonycasts.com/screencast/deep-dive/controller-container#play)
+* How does the Controller Access the Container?
 
 
 
