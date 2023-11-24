@@ -102,8 +102,9 @@ Eventos, eventos y eventos.
 Conexión a Symfony con un suscriptor de eventos.
 
 ### Next 
-[Cap 8](https://symfonycasts.com/screencast/deep-dive/controller-container#play)
-* How does the Controller Access the Container?
+[Cap 10(https://symfonycasts.com/screencast/deep-dive/argument-value-resolvers#play)
+* Argument Value Resolvers
+
 
 
 
