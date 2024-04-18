@@ -102,7 +102,7 @@ Eventos, eventos y eventos.
 Conexión a Symfony con un suscriptor de eventos.
 
 ### Next 
-[Cap 14](https://symfonycasts.com/screencast/deep-dive/finishing-request#play)
+[Cap 16](https://symfonycasts.com/screencast/deep-dive/kernel-exception#play)
 * Argument Value Resolvers
 
 
