@@ -102,8 +102,8 @@ Eventos, eventos y eventos.
 Conexión a Symfony con un suscriptor de eventos.
 
 ### Next 
-[Cap 20](https://symfonycasts.com/screencast/deep-dive/controller-attribute#play)
-* The magic of "_controller" attributes
+[Cap 22](https://symfonycasts.com/screencast/deep-dive/entity-arguments#play)
+* How Entity Controller Arguments Work
 
 
 

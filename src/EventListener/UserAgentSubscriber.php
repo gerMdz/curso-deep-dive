@@ -24,7 +24,6 @@ class UserAgentSubscriber implements EventSubscriberInterface
         $userAgent = $request->headers->get('User-Agent');
         $this->logger->info(sprintf('El User-Agent es "%s', $userAgent));
 
-
     }
     public static function getSubscribedEvents(): array
     {
