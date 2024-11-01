@@ -10,6 +10,7 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Routing\Exception\NoConfigurationException;
 
 class ArticleController extends AbstractController
 {
@@ -17,18 +18,27 @@ class ArticleController extends AbstractController
      * Currently unused: just showing a controller with a constructor!
      */
     private $isDebug;
+    private LoggerInterface $logger;
 
-    public function __construct(bool $isDebug)
+    /**
+     * @param bool $isDebug
+     * @param LoggerInterface $logger
+     */
+    public function __construct(bool $isDebug, LoggerInterface $logger)
     {
         $this->isDebug = $isDebug;
+        $this->logger = $logger;
+        $this->logger->info('Controller instansiado');
     }
 
     /**
      * @Route("/", name="app_homepage")
      */
-    public function homepage(ArticleRepository $repository)
+    public function homepage(ArticleRepository $repository, LoggerInterface $logger)
     {
         $articles = $repository->findAllPublishedOrderedByNewest();
+
+        $logger->info('En el controlador de home');
 
         return $this->render('article/homepage.html.twig', [
             'articles' => $articles,
@@ -38,8 +48,14 @@ class ArticleController extends AbstractController
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show(Article $article, SlackClient $slack)
+    public function show($slug, SlackClient $slack, ArticleRepository $articleRepository)
     {
+
+        $article = $articleRepository->findOneBy(['slug' => $slug]);
+
+        if(!$article){
+            throw $this->createNotFoundException();
+        }
         if ($article->getSlug() === 'khaaaaaan') {
             $slack->sendMessage('Kahn', 'Ah, Kirk, my old friend...');
         }

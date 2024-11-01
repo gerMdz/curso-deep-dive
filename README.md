@@ -95,3 +95,17 @@ us do what we love!
 
 <3 Your friends at SymfonyCasts
 
+### Cap 1
+Eventos, eventos y eventos.
+
+### Cap 2
+Conexión a Symfony con un suscriptor de eventos.
+
+### Next 
+[Cap 20](https://symfonycasts.com/screencast/deep-dive/controller-attribute#play)
+* The magic of "_controller" attributes
+
+
+
+
+
